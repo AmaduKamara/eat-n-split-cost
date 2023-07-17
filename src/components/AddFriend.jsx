@@ -1,7 +1,11 @@
 import React from "react";
 
 function AddFriend() {
-  return <div>AddFriend</div>;
+  return (
+    <div>
+      
+    </div>
+  );
 }
 
 export default AddFriend;
