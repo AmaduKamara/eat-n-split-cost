@@ -9,14 +9,16 @@ function AddFriend() {
           className="py-1 px-4 border rounded-md focus:outline-cyan-600 w-64"
           type="text"
           placeholder="Friend name"
+          id="name"
         />
       </div>
       <div className="mb-3 flex items-center space-x-4 justify-between">
-        <label htmlFor="name">🎆 Image URL</label>
+        <label htmlFor="photo">🎆 Image URL</label>
         <input
           className="py-1 px-4 border rounded-md focus:outline-cyan-600 w-64"
           type="text"
           value="https://i.pravatar.cc/48"
+          id="photo"
         />
       </div>
       <div className="flex justify-end">
