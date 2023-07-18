@@ -2,8 +2,8 @@ import React from "react";
 
 function BillForm() {
   return (
-    <form className="w-full bg-cyan-100 py-4 px-3 mt-5">
-      <div className="mb-5 flex items-center space-x-4 justify-between">
+    <form className="w-full bg-cyan-100 px-3 mt-5">
+      <div className="mb-3 flex items-center space-x-4 justify-between">
         <label htmlFor="billValue">💰 Bill value</label>
         <input
           className="py-2 px-4 w-[220px] border rounded-md focus:outline-cyan-600"
