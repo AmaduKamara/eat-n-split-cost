@@ -24,11 +24,11 @@ function AddFriend({ onCloseForm }) {
       <div className="flex justify-end">
         <butto
           onClick={onCloseForm}
-          className="py-2 px-8 mr-4 rounded-md border border-cyan-600 text-cyan-600 hover:bg-cyan-700 hover:text-slate-100 cursor-pointer transition duration-300"
+          className="py-1 px-8 mr-4 rounded-md border border-cyan-600 text-cyan-600 hover:bg-cyan-700 hover:text-slate-100 cursor-pointer transition duration-300"
         >
           Cancel
         </butto>
-        <button className="py-2 px-6 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300">
+        <button className="py-1 px-6 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300">
           Add Friend
         </button>
       </div>
