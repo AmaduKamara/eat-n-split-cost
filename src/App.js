@@ -2,6 +2,8 @@ import Bill from "./components/Bill";
 import FriendsList from "./components/FriendsList";
 import Header from "./components/Header";
 
+
+
 function App() {
   return (
     <div className="w-full h-screen bg-slate-100 py-24">
