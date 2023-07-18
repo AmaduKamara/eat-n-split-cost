@@ -28,6 +28,7 @@ function BillForm() {
           type="text"
           placeholder="Your friend's expense"
           id="friend"
+          disabled
         />
       </div>
       <div className="mb-3 flex items-center space-x-4 justify-between">
