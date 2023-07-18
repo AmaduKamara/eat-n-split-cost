@@ -5,6 +5,10 @@ import AddFriend from "./AddFriend";
 function FriendsList() {
   const [showForm, setShowForm] = useState(false);
 
+  const closeAddFriendForm = () => {
+    setShowForm(false);
+  };
+
   return (
     <div className="flex-1">
       <Friend />
@@ -21,7 +25,7 @@ function FriendsList() {
           </button>
         </div>
       )}
-      {showForm && <AddFriend />}
+      {showForm && <AddFriend onCloseForm={closeAddFriendForm} />}
     </div>
   );
 }
