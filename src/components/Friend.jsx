@@ -11,12 +11,12 @@ function Friend({ friend }) {
           <h3 className="font-semibold">{friend.name}</h3>
           {friend.balance < 0 && (
             <p className="text-xs text-red-300">
-              You owe {friend.name} ${friend.balance}
+              You owe {friend.name} ${(Math.abs(friend.balance))}
             </p>
           )}
           {friend.balance > 0 && (
             <p className="text-xs text-green-400">
-              {friend.name} owes you ${friend.balance}
+              {friend.name} owes you ${(Math.abs(friend.balance))}
             </p>
           )}
           {friend.balance === 0 && (
