@@ -8,7 +8,7 @@ function AddFriend({ onAddFriend }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const id = 123890;
+    const id = 117890;
 
     const newFriend = {
       id,
@@ -17,7 +17,7 @@ function AddFriend({ onAddFriend }) {
       balance,
     };
 
-    if (name === "" || image === "") return;
+    if (name === "" && image === "") return;
 
     onAddFriend(newFriend);
 
@@ -50,12 +50,19 @@ function AddFriend({ onAddFriend }) {
         />
       </div>
       <div className="flex justify-end items-center">
-        <button
-          onClick={handleSubmit}
-          className="py-1 px-6 border border-cyan-600 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300"
-        >
-          Add Friend
-        </button>
+        <div>
+          <button className="py-1 mr-4 px-8 rounded-md border border-cyan-600 text-cyan-600 hover:bg-cyan-700 hover:text-slate-100 cursor-pointer transition duration-300">
+            Cancel
+          </button>
+        </div>
+        <div>
+          <button
+            onClick={handleSubmit}
+            className="py-1 px-6 border border-cyan-600 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300"
+          >
+            Add Friend
+          </button>
+        </div>
       </div>
     </form>
   );
