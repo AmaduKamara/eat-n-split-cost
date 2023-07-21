@@ -1,6 +1,10 @@
 import React from "react";
 
-function AddFriend({ onCloseForm }) {
+function AddFriend() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <form className="w-full bg-cyan-100 py-4 px-3 mt-5">
       <div className="mb-3 flex items-center space-x-4 justify-between">
@@ -21,16 +25,20 @@ function AddFriend({ onCloseForm }) {
           id="photo"
         />
       </div>
-      <div className="flex justify-end">
-        <butto
-          onClick={onCloseForm}
-          className="py-1 px-8 mr-4 rounded-md border border-cyan-600 text-cyan-600 hover:bg-cyan-700 hover:text-slate-100 cursor-pointer transition duration-300"
-        >
-          Cancel
-        </butto>
-        <button className="py-1 px-6 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300">
-          Add Friend
-        </button>
+      <div className="flex justify-end items-center">
+        <div>
+          <button className="py-1 mr-4 px-8 rounded-md border border-cyan-600 text-cyan-600 hover:bg-cyan-700 hover:text-slate-100 cursor-pointer transition duration-300">
+            Cancel
+          </button>
+        </div>
+        <div>
+          <button
+            onClick={handleSubmit}
+            className="py-1 px-6 border border-cyan-600 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300"
+          >
+            Add Friend
+          </button>
+        </div>
       </div>
     </form>
   );
