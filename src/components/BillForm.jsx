@@ -1,6 +1,7 @@
-import React from "react";
-
 function BillForm() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <form className="w-full bg-cyan-100 px-3 mt-5">
       <div className="mb-3 flex items-center space-x-4 justify-between">
@@ -43,8 +44,11 @@ function BillForm() {
         </select>
       </div>
       <div className="flex justify-end">
-        <button className="py-2 px-10 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300">
-          Add Friend
+        <button
+          onClick={handleSubmit}
+          className="py-2 px-10 border border-cyan-600 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300"
+        >
+          Add Bill
         </button>
       </div>
     </form>
