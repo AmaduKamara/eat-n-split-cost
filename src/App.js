@@ -27,13 +27,21 @@ const initialFriends = [
 function App() {
   const [friends, setFriends] = useState(initialFriends);
   const [showForm, setShowForm] = useState(false);
+  const [selectedFriend, setSelectedFriend] = useState(null);
 
   const handleCloseForm = () => {
     setShowForm((show) => !show);
+    setSelectedFriend(null);
   };
 
   const handleAddFriend = (friend) => {
     setFriends((friends) => [...friends, friend]);
+  };
+
+  // Handles friend selection that gets passed to the friend with it value
+  const handleSelection = (friend) => {
+    setSelectedFriend(friend);
+    setShowForm(false);
   };
 
   return (
@@ -47,8 +55,11 @@ function App() {
             showForm={showForm}
             onAddFriend={handleAddFriend}
             setShowForm={setShowForm}
+            onSelection={handleSelection}
+            selectedFriend={selectedFriend}
           />
-          <SplitBill />
+          {/* Only if a friend is selected, then the bill form shows */}
+          {selectedFriend && <SplitBill selectedFriend={selectedFriend} />}
         </div>
       </div>
     </div>
