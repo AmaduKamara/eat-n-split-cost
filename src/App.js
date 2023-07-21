@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Bill from "./components/Bill";
+import SplitBill from "./components/SplitBill";
 import FriendsList from "./components/FriendsList";
 import Header from "./components/Header";
 
@@ -47,7 +47,7 @@ function App() {
             showForm={showForm}
             onAddFriend={handleAddFriend}
           />
-          <Bill />
+          <SplitBill />
         </div>
       </div>
     </div>
