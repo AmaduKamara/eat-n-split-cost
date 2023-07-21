@@ -31,9 +31,9 @@ function AddFriend({ onAddFriend, setShowForm }) {
   return (
     <form className="w-full bg-cyan-100 py-4 px-3 mt-5" onSubmit={handleSubmit}>
       <div className="mb-3 flex items-center space-x-4 justify-between">
-        <label htmlFor="name">👭 Friend name</label>
+        <label className="text-sm md:text-lg" htmlFor="name">👭 Friend name</label>
         <input
-          className="py-1 px-4 border rounded-md focus:outline-cyan-600 w-64"
+          className="py-1 px-4 border rounded-md focus:outline-cyan-600 w-40 md:w-64"
           type="text"
           placeholder="Friend name"
           id="name"
@@ -42,9 +42,9 @@ function AddFriend({ onAddFriend, setShowForm }) {
         />
       </div>
       <div className="mb-3 flex items-center space-x-4 justify-between">
-        <label htmlFor="image">🎆 Image URL</label>
+        <label className="text-sm md:text-lg" htmlFor="image">🎆 Image URL</label>
         <input
-          className="py-1 px-4 border rounded-md focus:outline-cyan-600 w-64"
+          className="py-1 px-4 border rounded-md focus:outline-cyan-600 w-40 md:w-64"
           type="text"
           id="image"
           disabled
