@@ -46,6 +46,7 @@ function App() {
             onCloseForm={handleCloseForm}
             showForm={showForm}
             onAddFriend={handleAddFriend}
+            setShowForm={setShowForm}
           />
           <SplitBill />
         </div>
