@@ -32,6 +32,10 @@ function App() {
     setShowForm((show) => !show);
   };
 
+  const handleAddFriend = (friend) => {
+    setFriends((friends) => [...friends, friend]);
+  };
+
   return (
     <div className="w-full h-screen bg-slate-100 py-24">
       <div className="w-[900px] container mx-auto">
@@ -41,6 +45,7 @@ function App() {
             friends={friends}
             onCloseForm={handleCloseForm}
             showForm={showForm}
+            onAddFriend={handleAddFriend}
           />
           <Bill />
         </div>
