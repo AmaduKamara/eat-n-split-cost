@@ -1,4 +1,4 @@
-function BillForm() {
+function BillForm({ selectedFriend }) {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -28,7 +28,7 @@ function BillForm() {
       </div>
       <div className="mb-3 flex items-center space-x-4 justify-between">
         <label className="sm:text-xs md:text-lg" htmlFor="friend">
-          🧍🏻 John expense
+          🧍🏻 {selectedFriend.name}'s expense
         </label>
         <input
           className="py-1 md:py-2 px-4  w-[150px] border rounded-md focus:outline-cyan-600"
