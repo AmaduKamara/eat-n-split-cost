@@ -1,7 +1,13 @@
 import Friend from "./Friend";
 import AddFriend from "./AddFriend";
 
-function FriendsList({ friends, onCloseForm, showForm, onAddFriend }) {
+function FriendsList({
+  friends,
+  onCloseForm,
+  showForm,
+  onAddFriend,
+  setShowForm,
+}) {
   return (
     <div className="mx-6">
       <ul>
@@ -11,7 +17,11 @@ function FriendsList({ friends, onCloseForm, showForm, onAddFriend }) {
       </ul>
 
       {showForm && (
-        <AddFriend onCloseForm={onCloseForm} onAddFriend={onAddFriend} />
+        <AddFriend
+          onCloseForm={onCloseForm}
+          onAddFriend={onAddFriend}
+          setShowForm={setShowForm}
+        />
       )}
 
       {!showForm && (
