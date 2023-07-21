@@ -48,6 +48,21 @@ function App() {
     setShowForm(false);
   };
 
+  // Updating the friend data upon bill splitting
+  const handleSplitBill = (value) => {
+    console.log(value);
+
+    setFriends((friends) =>
+      friends.map((friend) =>
+        friend.id === selectedFriend.id
+          ? { ...friend, balance: friend.balance + value }
+          : friend
+      )
+    );
+
+    setSelectedFriend(null);
+  };
+
   return (
     <div className="w-full h-screen bg-slate-100">
       <div className="container mx-auto">
@@ -63,7 +78,12 @@ function App() {
             selectedFriend={selectedFriend}
           />
           {/* Only if a friend is selected, then the bill form shows */}
-          {selectedFriend && <SplitBill selectedFriend={selectedFriend} />}
+          {selectedFriend && (
+            <SplitBill
+              onSplitBill={handleSplitBill}
+              selectedFriend={selectedFriend}
+            />
+          )}
         </div>
       </div>
     </div>
