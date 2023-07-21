@@ -7,12 +7,20 @@ function FriendsList({
   showForm,
   onAddFriend,
   setShowForm,
+  onSelection,
+  selectedFriend,
 }) {
+  
   return (
     <div className="mx-6">
       <ul>
         {friends.map((friend) => (
-          <Friend key={friend.id} friend={friend} />
+          <Friend
+            key={friend.id}
+            friend={friend}
+            onSelection={onSelection}
+            selectedFriend={selectedFriend}
+          />
         ))}
       </ul>
 
