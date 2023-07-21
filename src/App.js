@@ -40,7 +40,11 @@ function App() {
 
   // Handles friend selection that gets passed to the friend with it value
   const handleSelection = (friend) => {
-    setSelectedFriend(friend);
+    // check if the current friend id equals the friend id and render null else render the friend object
+    setSelectedFriend((currFriend) =>
+      currFriend?.id === friend.id ? null : friend
+    );
+
     setShowForm(false);
   };
 
