@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function AddFriend({ onAddFriend }) {
+function AddFriend({ onAddFriend, setShowForm }) {
   const [name, setName] = useState("");
   const [balance, setBalance] = useState(0);
   const [image, setImage] = useState("https://i.pravatar.cc/48");
@@ -24,6 +24,8 @@ function AddFriend({ onAddFriend }) {
     setName("");
     setImage("https://i.pravatar.cc/48");
     setBalance(0);
+
+    setShowForm(false);
   };
 
   return (
