@@ -37,10 +37,10 @@ function App() {
   };
 
   return (
-    <div className="w-full h-screen bg-slate-100 py-24">
-      <div className="w-[900px] container mx-auto">
+    <div className="w-full h-screen bg-slate-100">
+      <div className="container mx-auto">
         <Header />
-        <div className="flex gap-8 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           <FriendsList
             friends={friends}
             onCloseForm={handleCloseForm}
