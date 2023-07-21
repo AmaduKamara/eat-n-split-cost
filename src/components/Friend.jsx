@@ -9,7 +9,19 @@ function Friend({ friend }) {
         </div>
         <div>
           <h3 className="font-semibold">{friend.name}</h3>
-          <p className="text-xs">John Doe owes you</p>
+          {friend.balance < 0 && (
+            <p className="text-xs text-red-300">
+              You owe {friend.name} ${friend.balance}
+            </p>
+          )}
+          {friend.balance > 0 && (
+            <p className="text-xs text-green-400">
+              {friend.name} owes you ${friend.balance}
+            </p>
+          )}
+          {friend.balance === 0 && (
+            <p className="text-xs">You and {friend.name} are even </p>
+          )}
         </div>
       </div>
       <button className="py-1 px-4 rounded-md bg-cyan-600 text-slate-50 hover:bg-cyan-700 transition duration-300">
