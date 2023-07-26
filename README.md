@@ -1,6 +1,20 @@
-# Eat-N-Split-Cost of Food
+# Split-Bill of Food
 
-**Eat-N-Split** is a logical app that splits bills between two friends and shows which friend owes the other.
+**Split-Bill** is a logical app that splits bills between two friends and shows which friend owes the other.
+
+## App Usage
+
+> To run the app locally on your computer: 
+
+- Clone the repo into your desired directory
+
+- `git clone https://github.com/AmaduKamara/eat-n-split-cost.git`
+- `cd eat-n-split-cost`
+- `npm install`
+- `npm start`
+
+## Live Demo
+View the app on [Split-Bill](https://split-our-bill.vercel.app/)
 
 ## App Screenshots
 
