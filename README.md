@@ -2,7 +2,14 @@
 
 **Split-Bill** is a logical app that splits bills between two friends and shows which friend owes the other.
 
-## App Usage
+## Built With
+- React
+- TailwindCSS
+
+## Author
+- [Amadu Kamara](https://amkam.vercel.app/)
+
+## Getting Started
 
 > To run the app locally on your computer: 
 
