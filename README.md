@@ -25,9 +25,16 @@ View the app on [Split-Bill](https://split-our-bill.vercel.app/)
 
 ## App Screenshots
 
+### Mobile View
 
-<img width="1693" alt="Screenshot 2023-07-21 at 2 12 57 PM" src="https://github.com/AmaduKamara/eat-n-split-cost/assets/50941074/99a0f329-bd90-44de-bd77-5b61ef1636fc">
+<img width="494" alt="Screenshot 2023-07-26 at 10 26 10 AM" src="https://github.com/AmaduKamara/eat-n-split-cost/assets/50941074/13c9c82a-fd78-41cf-bfeb-13f74a49cf79">
 
-<img width="1683" alt="Screenshot 2023-07-21 at 2 13 14 PM" src="https://github.com/AmaduKamara/eat-n-split-cost/assets/50941074/158a7f8c-8262-467d-a769-f25b0024cb56">
+<img width="466" alt="Screenshot 2023-07-26 at 10 26 33 AM" src="https://github.com/AmaduKamara/eat-n-split-cost/assets/50941074/92ebbdee-d5ff-4cb8-8b3f-8acdd389507d">
 
-<img width="1684" alt="Screenshot 2023-07-21 at 2 13 44 PM" src="https://github.com/AmaduKamara/eat-n-split-cost/assets/50941074/f072ec75-9178-404b-9f28-8b17e42e0d23">
+### Desktop View
+
+<img width="1769" alt="Screenshot 2023-07-26 at 10 25 06 AM" src="https://github.com/AmaduKamara/eat-n-split-cost/assets/50941074/f1c91ed5-3216-4c17-9d3c-d6a1c8ccec48">
+
+<img width="1754" alt="Screenshot 2023-07-26 at 10 25 21 AM" src="https://github.com/AmaduKamara/eat-n-split-cost/assets/50941074/f5932420-9e84-4526-84e6-d4684bf1d06e">
+
+<img width="1770" alt="Screenshot 2023-07-26 at 10 25 51 AM" src="https://github.com/AmaduKamara/eat-n-split-cost/assets/50941074/cc50ab84-3a44-4e9f-8430-f16ff291f15d">
